@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_whiten"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shuvalov.nikita.toolbarsandmenuslab.WhitenActivity">
+    <TextView
+        android:text="Whiten Toolbar"
+        android:layout_centerInParent="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/whiten_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#b3b3dd">
+        <RelativeLayout
+            android:id="@+id/toolbar_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/move_image"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/move"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/move_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Move"
+            android:layout_below="@id/move_image"
+            android:layout_alignRight="@id/move_image"
+            android:layout_alignLeft="@id/move_image"
+            android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/whiten_image"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:src="@drawable/whiten"
+                android:layout_toRightOf="@id/move_image"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:id="@+id/whiten_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/whiten_image"
+                android:layout_alignRight="@id/whiten_image"
+                android:text="Whiten"
+                android:gravity="center"
+                android:layout_alignLeft="@id/whiten_image"/>
+            <ImageView
+                android:id="@+id/erase_image"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:src="@drawable/erase"
+                android:layout_toRightOf="@id/whiten_image"
+                android:tint="#444"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:id="@+id/erase_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/erase_image"
+                android:layout_alignRight="@id/erase_image"
+                android:text="Erase"
+                android:gravity="center"
+                android:layout_alignLeft="@id/erase_image"/>
+            <ImageView
+                android:id="@+id/help_image"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_toRightOf="@id/erase_image"
+                android:src="@drawable/help"
+                android:tint="#444"/>
+            <TextView
+                android:id="@+id/text_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:gravity="center"
+                android:layout_below="@id/help_image"
+                android:layout_alignRight="@id/help_image"
+                android:layout_alignLeft="@id/help_image"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

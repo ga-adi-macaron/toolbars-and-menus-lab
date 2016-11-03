@@ -1,5 +1,6 @@
 package shuvalov.nikita.toolbarsandmenuslab;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -78,7 +79,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "I think this is the details, clicked", Toast.LENGTH_SHORT).show();
                 return true;
             case (R.id.next_app):
-                //Switch to next app
+                Intent intent = new Intent(MainActivity.this, WhitenActivity.class);
+                startActivity(intent);
                 return true;
         }
         return super.onOptionsItemSelected(item);
