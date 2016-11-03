@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.joelimyx.myapplication.WhitenActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_whiten"/>
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom"
+        android:background="#949494">
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/move_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/move"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:id="@+id/move_text"
+                android:text="Move"
+                android:textSize="12sp"
+                android:layout_below="@id/move_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/whiten_image"
+                android:layout_toRightOf="@id/move_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/toothbrush"
+                android:layout_marginRight="30dp"/>
+            <TextView
+                android:id="@+id/whiten_text"
+                android:layout_toRightOf="@id/move_image"
+                android:text="Whiten"
+                android:layout_below="@id/whiten_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/erase_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/eraser"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@id/whiten_image"/>
+            <TextView
+                android:id="@+id/erase_text"
+                android:text="Erase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/whiten_image"
+                android:layout_below="@id/erase_image"/>
+            <ImageView
+                android:id="@+id/help_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/erase_image"
+                android:src="@drawable/ic_help_outline_black_36dp"/>
+            <TextView
+                android:id="@+id/help_text"
+                android:text="Help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/erase_image"
+                android:layout_below="@id/help_image"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.CoordinatorLayout>
