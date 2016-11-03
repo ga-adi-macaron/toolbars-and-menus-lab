@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shuvalov.nikita.toolbarsandmenuslab.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Pandora ToolBar!"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/pandora_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#12148f">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <ImageView
+                android:id="@+id/thumb_down_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/thumbs_down"/>
+            <ImageView
+                android:id="@+id/thumbs_up_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/thumb_down_img"
+                android:src="@drawable/thumbs_up"/>
+            <ImageView
+                android:id="@+id/toggle_play"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/thumbs_up_img"
+                android:src="@android:drawable/ic_media_pause"
+                />
+            <ImageView
+                android:id="@+id/skip_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/toggle_play"
+                android:src="@android:drawable/ic_media_ff"/>
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thumb_down_img"
+                android:layout_alignLeft="@id/thumb_down_img"
+                android:layout_alignRight="@id/skip_img"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>
