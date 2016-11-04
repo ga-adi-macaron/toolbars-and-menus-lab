@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_move"
+        android:title="Move"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_whiten"
+        android:title="Whiten"
+        android:icon="@android:drawable/ic_input_get"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_erase"
+        android:title="Erase"
+        android:icon="@android:drawable/ic_dialog_info"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_help"
+        android:title="Help"
+        android:icon="@android:drawable/ic_menu_help"
+        app:showAsAction="always"/>
+</menu>
