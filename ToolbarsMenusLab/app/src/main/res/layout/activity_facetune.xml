@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_facetune"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ezequielc.toolbarsmenuslab.FacetuneActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/facetune_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/move"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_input_add" />
+
+            <ImageView
+                android:id="@+id/whiten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_today"
+                android:layout_toRightOf="@id/move"/>
+
+            <ImageView
+                android:id="@+id/erase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_delete"
+                android:layout_toRightOf="@id/whiten"/>
+
+            <ImageView
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_help"
+                android:layout_toRightOf="@id/erase"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>
